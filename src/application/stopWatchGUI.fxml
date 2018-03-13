@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StopWatchController">
+   <children>
+      <VBox>
+         <children>
+            <HBox prefHeight="130.0" prefWidth="400.0">
+               <children>
+                  <Label fx:id="minLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="130.0" prefWidth="126.0" text="00" textAlignment="CENTER">
+                     <font>
+                        <Font size="67.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="130.0" prefWidth="9.5" text=":" textAlignment="CENTER">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="secLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="130.0" prefWidth="126.0" text="00">
+                     <font>
+                        <Font size="67.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="130.0" prefWidth="9.5" text=":">
+                     <font>
+                        <Font size="50.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="milLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="130.0" prefWidth="126.0" text="00">
+                     <font>
+                        <Font size="67.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Button fx:id="startButton" mnemonicParsing="false" onAction="#start" prefHeight="200.0" prefWidth="200.0" text="START">
+                     <font>
+                        <Font size="43.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="stopButton" mnemonicParsing="false" onAction="#stop" prefHeight="200.0" prefWidth="200.0" text="STOP">
+                     <font>
+                        <Font size="43.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="resetButton" alignment="CENTER" mnemonicParsing="false" onAction="#reset" prefHeight="100.0" prefWidth="400.0" text="RESET" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>
