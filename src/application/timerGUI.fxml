@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TimeController">
+   <children>
+      <HBox fx:id="Buttons1" prefHeight="170.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="hr" alignment="CENTER" blendMode="HARD_LIGHT" focusTraversable="false" prefHeight="169.0" prefWidth="169.0" scaleShape="false" styleClass="textInputLabel" text="00">
+               <font>
+                  <Font size="51.0" />
+               </font>
+            </TextField>
+            <Label blendMode="HARD_LIGHT" prefHeight="170.0" styleClass="textInputLabel" text=":">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <TextField fx:id="min" alignment="CENTER" blendMode="HARD_LIGHT" focusTraversable="false" prefHeight="169.0" prefWidth="169.0" styleClass="textInputLabel" text="00">
+               <font>
+                  <Font size="51.0" />
+               </font>
+            </TextField>
+            <Label blendMode="HARD_LIGHT" prefHeight="170.0" styleClass="textInputLabel" text=":">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <TextField fx:id="sec" alignment="CENTER" blendMode="HARD_LIGHT" focusTraversable="false" prefHeight="169.0" prefWidth="169.0" styleClass="textInputLabel" text="00">
+               <font>
+                  <Font size="51.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="30.0" prefWidth="400.0">
+         <children>
+            <Button fx:id="start" mnemonicParsing="false" onAction="#startTimer" prefWidth="133.3" text="Start" />
+            <Button fx:id="stop" mnemonicParsing="false" onAction="#stopTimer" prefWidth="133.3" text="Stop" />
+            <Button fx:id="reset" mnemonicParsing="false" onAction="#resetTimer" prefWidth="133.3" text="Reset" />
+         </children>
+      </HBox>
+      <HBox fx:id="Buttons11" prefHeight="170.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="hr1" alignment="CENTER" blendMode="HARD_LIGHT" prefHeight="169.0" prefWidth="169.0" scaleShape="false" styleClass="textInputLabel" text="00">
+               <font>
+                  <Font size="52.0" />
+               </font>
+            </TextField>
+            <Label blendMode="HARD_LIGHT" prefHeight="170.0" styleClass="textInputLabel" text=":">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <TextField fx:id="min1" alignment="CENTER" blendMode="HARD_LIGHT" prefHeight="169.0" prefWidth="169.0" styleClass="textInputLabel" text="00">
+               <font>
+                  <Font size="52.0" />
+               </font>
+            </TextField>
+            <Label blendMode="HARD_LIGHT" prefHeight="170.0" styleClass="textInputLabel" text=":">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <TextField fx:id="sec1" alignment="CENTER" blendMode="HARD_LIGHT" prefHeight="169.0" prefWidth="169.0" styleClass="textInputLabel" text="00">
+               <font>
+                  <Font size="52.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="30.0" prefWidth="400.0">
+         <children>
+            <Button fx:id="start1" mnemonicParsing="false" onAction="#startTimer" prefWidth="133.3" text="Start" />
+            <Button fx:id="stop1" mnemonicParsing="false" onAction="#stopTimer" prefWidth="133.3" text="Stop" />
+            <Button fx:id="reset1" mnemonicParsing="false" onAction="#resetTimer" prefWidth="133.3" text="Reset" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
