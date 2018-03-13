@@ -1,2 +1,2 @@
 # JavaTimerAndAlarm
-Simple GUI created to be an alarm clock and timer.
+Simple GUI program created to function as an alarm clock and timer.
